@@ -1,0 +1,13 @@
+
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4" [style]="styleColumns">
+  @for (column of getMasonry(); track $index;) {
+    <div class="grid gap-4">
+      @for (image of column.images; track $index) {
+        <div>
+            <img class="h-auto max-w-full rounded-lg" [src]="image" alt="">
+        </div>
+      }
+    </div>
+  }
+</div>
