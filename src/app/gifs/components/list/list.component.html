@@ -4,9 +4,9 @@
   @for (column of getMasonry(); track $index;) {
     <div class="grid gap-4">
       @for (image of column.images; track $index) {
-        <div>
-            <img class="h-auto max-w-full rounded-lg" [src]="image" alt="">
-        </div>
+        <gifs-list-item
+          [imageUrl]="image"
+        />
       }
     </div>
   }

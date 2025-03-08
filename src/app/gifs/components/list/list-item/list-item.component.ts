@@ -1,9 +1,11 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, signal } from '@angular/core';
 
 @Component({
-  selector: 'app-list-item',
+  selector: 'gifs-list-item',
   imports: [],
   templateUrl: './list-item.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ListItemComponent { }
+export class ListItemComponent {
+  imageUrl = input.required<string>();
+}

@@ -1,10 +1,10 @@
 export interface GiphyResponse {
-  data:       GifItem[];
+  data:       GifphyItem[];
   meta:       Meta;
   pagination: Pagination;
 }
 
-export interface GifItem {
+export interface GifphyItem {
   type:                       Type;
   id:                         string;
   url:                        string;
